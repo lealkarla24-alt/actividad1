@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preguntas Frecuentes - La Michoacana</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff6fb;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(90deg, #e75480, #ff6fa3);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .faq-container {
+      width: 80%;
+      max-width: 800px;
+      margin: 30px auto;
+    }
+
+    .faq {
+      background: white;
+      margin: 10px 0;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .faq button {
+      width: 100%;
+      padding: 15px;
+      border: none;
+      outline: none;
+      text-align: left;
+      background: #ff99cc;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .faq button:hover {
+      background: #ff66b2;
+      color: white;
+    }
+
+    .faq p {
+      margin: 0;
+      padding: 15px;
+      display: none;
+      background: #fff;
+      color: #333;
+    }
+
+    footer {
+      background: #e75480;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Preguntas Frecuentes</h1>
+    <p>La Michoacana</p>
+  </header>
+
+  <div class="faq-container">
+    <div class="faq">
+      <button onclick="toggleFAQ(this)">¿Dónde se encuentran ubicados?</button>
+      <p>Nuestra sucursal principal está en el centro de la ciudad, pero contamos con varias tiendas en diferentes colonias.</p>
+    </div>
+
+    <div class="faq">
+      <button onclick="toggleFAQ(this)">¿Cuáles son sus horarios?</button>
+      <p>Abrimos todos los días de 10:00 a.m. a 9:00 p.m.</p>
+    </div>
+
+    <div class="faq">
+      <button onclick="toggleFAQ(this)">¿Ofrecen servicio a domicilio?</button>
+      <p>Sí, contamos con servicio a domicilio en zonas cercanas. También puedes pedirnos por apps de entrega.</p>
+    </div>
+
+    <div class="faq">
+      <button onclick="toggleFAQ(this)">¿Se pueden personalizar los productos?</button>
+      <p>Sí, ofrecemos paletas y nieves personalizadas con combinaciones de frutas y sabores especiales.</p>
+    </div>
+
+    <div class="faq">
+      <button onclick="toggleFAQ(this)">¿Qué métodos de pago aceptan?</button>
+      <p>Aceptamos pagos en efectivo, tarjeta de crédito, débito y transferencias electrónicas.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 La Michoacana - Todos los derechos reservados</p>
+  </footer>
+
+  <script>
+    function toggleFAQ(button) {
+      let p = button.nextElementSibling;
+      p.style.display = (p.style.display === "block") ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>
